@@ -21,7 +21,7 @@
           mapTypeControl: false
         });
       
-        const iconBase = "./img/";
+        const iconBase = "img/";
         const icons = {
           on_with_life: {
             name: "On With Life",
