@@ -18,15 +18,16 @@
           styles: mapStyle,
           isFractionalZoomEnabled: true,
           streetViewControl: false,
+          mapTypeControl: false
         });
       
-        const iconBase = "/img/";
+        const iconBase = "./img/";
         const icons = {
           on_with_life: {
             name: "On With Life",
             icon: iconBase + "owl.svg",
-            sizeW: 50,
-            sizeH: 50,
+            sizeW: 60,
+            sizeH: 60,
           },
           hyvee: {
             name: "HyVee",
