@@ -36,7 +36,7 @@ body {
 @media (max-width: 1000px) {
     #legend {
         top: unset;
-        bottom: 5vh;
+        bottom: 2vh;
         width: calc(100vw - 10vw);
         transition: all .3s ease-in-out;
     }
@@ -51,6 +51,10 @@ body {
 
     #legend-toggle {
         display: block !important;
+    }
+
+    #reset-button {
+        top: 7.5vh !important;
     }
 }
 
@@ -113,7 +117,7 @@ body {
     text-decoration: none;
     transition: all .15s ease-in-out;
     position: absolute;
-    top: 10vh;
+    top: 2vh;
     left: 3vw;
     cursor: pointer;
     width: 135px;
