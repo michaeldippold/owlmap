@@ -24,7 +24,7 @@ body {
     position: fixed;
     top: 5vh;
     right: 5vw;
-    width: 250px;
+    width: 300px;
     background-color: rgba(255,255,255,0.8);
     padding: 1rem;
     display: flex;
@@ -39,6 +39,10 @@ body {
         bottom: 2vh;
         width: calc(100vw - 10vw);
         transition: all .3s ease-in-out;
+    }
+
+    #legend h3 {
+        display: none;
     }
 
     #legend.opened {
@@ -68,7 +72,7 @@ body {
 
 #legend .legend-row {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 55%;
     gap: 8px;
     align-items: center;
 }

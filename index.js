@@ -31,65 +31,71 @@ function initMap() {
     const iconBase = "img/";
     const icons = {
         onwithlife: {
-        name: "On With Life",
-        icon: iconBase + "owl.svg",
-        sizeW: 60,
-        sizeH: 60,
+            name: "On With Life",
+            icon: iconBase + "owl.svg",
+            sizeW: 60,
+            sizeH: 60,
         },
         hyvee: {
-        name: "HyVee",
-        icon: iconBase + "hyvee.svg",
-        sizeW: 70,
-        sizeH: 40,
+            name: "HyVee",
+            icon: iconBase + "hyvee.svg",
+            sizeW: 70,
+            sizeH: 40,
         },
         fareway: {
-        name: "Fareway",
-        icon: iconBase + "fareway.svg",
-        sizeW: 80,
-        sizeH: 40,
+            name: "Fareway",
+            icon: iconBase + "fareway.svg",
+            sizeW: 80,
+            sizeH: 40,
         },
         walmart: {
-        name: "Walmart",
-        icon: iconBase + "walmart.svg",
-        sizeW: 100,
-        sizeH: 50,
+            name: "Walmart",
+            icon: iconBase + "walmart.svg",
+            sizeW: 100,
+            sizeH: 30,
         },
         postoffice: {
-        name: "Post Office",
-        icon: iconBase + "usps.png",
-        sizeW: 60,
-        sizeH: 50,
+            name: "Post Office",
+            icon: iconBase + "usps.png",
+            sizeW: 60,
+            sizeH: 50,
         },
         homewoodsuites: {
-        name: "Homewood Suites",
-        icon: iconBase + "homewood.svg",
-        sizeW: 100,
-        sizeH: 60,
+            name: "Homewood Suites",
+            icon: iconBase + "homewood.svg",
+            sizeW: 100,
+            sizeH: 30,
         },
         residenceinn: {
-        name: "Residence Inn",
-        icon: iconBase + "residenceinn.png",
-        sizeW: 100,
-        sizeH: 60,
+            name: "Residence Inn",
+            icon: iconBase + "residenceinn.png",
+            sizeW: 100,
+            sizeH: 30,
         },
         caseys: {
-        name: "Casey's",
-        icon: iconBase + "caseys.svg",
-        sizeW: 60,
-        sizeH: 40,
+            name: "Casey's",
+            icon: iconBase + "caseys.svg",
+            sizeW: 60,
+            sizeH: 40,
         },
         target: {
-        name: "Target",
-        icon: iconBase + "target.svg",
-        sizeW: 40,
-        sizeH: 40,
+            name: "Target",
+            icon: iconBase + "target.svg",
+            sizeW: 40,
+            sizeH: 40,
         },
         kumgo: {
-        name: "Kum & Go",
-        icon: iconBase + "kumgo.png",
-        sizeW: 60,
-        sizeH: 40,
+            name: "Kum & Go",
+            icon: iconBase + "kumgo.png",
+            sizeW: 60,
+            sizeH: 40,
         },
+        myplace: {
+            name: "My Place Hotel",
+            icon: iconBase + "myplace.png",
+            sizeW: 50,
+            sizeH: 40,
+        }
     };
     const features = [
         {
@@ -162,6 +168,16 @@ function initMap() {
             type: "kumgo",
             address: "1415 SW School St, Ankeny, IA 50023",
         },
+        {
+            position: new google.maps.LatLng( 41.716940, -93.601900 ),
+            type: "kumgo",
+            address: "1415 SW School St, Ankeny, IA 50023",
+        },
+        {
+            position: new google.maps.LatLng( 41.704690, -93.572150 ),
+            type: "myplace",
+            address: "2506 SE Tones Dr, Ankeny, IA 50021",
+        }
     ];
 
     const infowindow = new google.maps.InfoWindow({
