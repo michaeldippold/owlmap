@@ -21,7 +21,7 @@ body {
 }
 
 #legend {
-    position: absolute;
+    position: fixed;
     top: 5vh;
     right: 5vw;
     width: 250px;
