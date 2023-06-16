@@ -197,6 +197,7 @@ function initMap() {
     });
     
     const legend = document.getElementById("legend");
+    const resetButton = document.getElementById("reset-button");
     
     for (const key in icons) {
         const type = icons[key];
@@ -210,7 +211,7 @@ function initMap() {
         legend.appendChild(div);
     }        
     
-    document.getElementById("reset-button").addEventListener("click", () => {
+    resetButton.addEventListener("click", () => {
         map.setZoom(14);
         map.setCenter(center);
         infowindow.close();
@@ -221,6 +222,12 @@ function initMap() {
             legend.style.right = "-100vw";
         } else {
             legend.style.right = "5vw";
+        }
+
+        if (resetButton.style.display == 'block') {
+            resetButton.style.display = 'none';
+        }  else {
+            resetButton.style.display = 'block';
         }
     });
 }
