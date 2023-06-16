@@ -19,7 +19,7 @@ function initMap() {
     ];
     
     map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 14.4,
+        zoom: 14,
         center: center,
         mapTypeId: "roadmap",
         styles: mapStyle,
@@ -30,7 +30,7 @@ function initMap() {
     
     const iconBase = "img/";
     const icons = {
-        on_with_life: {
+        onwithlife: {
         name: "On With Life",
         icon: iconBase + "owl.svg",
         sizeW: 60,
@@ -93,64 +93,74 @@ function initMap() {
     };
     const features = [
         {
-        position: new google.maps.LatLng( 41.698770, -93.608780 ),
-        type: "on_with_life",
-        address: "715 SW Ankeny Rd, Ankeny, IA 50023",
+            position: new google.maps.LatLng( 41.698770, -93.608780 ),
+            type: "onwithlife",
+            address: "715 SW Ankeny Rd, Ankeny, IA 50023",
         },
         {
-        position: new google.maps.LatLng( 41.704891, -93.623169 ),
-        type: "hyvee",
-        address: "410 N Ankeny Blvd, Ankeny, IA 50023",
+            position: new google.maps.LatLng( 41.704891, -93.623169 ),
+            type: "hyvee",
+            address: "2510 SW State St, Ankeny, IA 50023",
         },
         {
-        position: new google.maps.LatLng( 41.734640, -93.602260 ),
-        type: "hyvee",
-        address: "2510 SW State St, Ankeny, IA 50023",
+            position: new google.maps.LatLng( 41.734640, -93.602260 ),
+            type: "hyvee",
+            address: "410 N Ankeny Blvd, Ankeny, IA 50023",
         },
         {
-        position: new google.maps.LatLng( 41.702110, -93.599690 ),
-        type: "fareway",
-        address: "1202 N Ankeny Blvd, Ankeny, IA 50023",
+            position: new google.maps.LatLng( 41.702110, -93.599690 ),
+            type: "fareway",
+            address: "109 SE Oralabor Rd, Ankeny, IA 50021",
         },
         {
-        position: new google.maps.LatLng( 41.704781, -93.584122 ),
-        type: "walmart",
-        address: "1002 SE National Dr, Ankeny, IA 50021",
+            position: new google.maps.LatLng( 41.704781, -93.584122 ),
+            type: "walmart",
+            address: "1002 SE National Dr, Ankeny, IA 50021",
         },
         {
-        position: new google.maps.LatLng( 41.720670, -93.600300 ),
-        type: "postoffice",
-        address: "1011 N Ankeny Blvd, Ankeny, IA 50023",
+            position: new google.maps.LatLng( 41.740363, -93.599799 ),
+            type: "postoffice",
+            address: "1011 N Ankeny Blvd, Ankeny, IA 50023",
         },
         {
-        position: new google.maps.LatLng( 41.704418, -93.569763 ),
-        type: "homewoodsuites",
-        address: "2455 SE Creekview Dr, Ankeny, IA 50021",
+            position: new google.maps.LatLng( 41.704418, -93.569763 ),
+            type: "homewoodsuites",
+            address: "2455 SE Creekview Dr, Ankeny, IA 50021",
         },
         {
-        position: new google.maps.LatLng( 41.713140, -93.616910 ),
-        type: "residenceinn",
-        address: "1515 SW Main St, Ankeny, IA 50023",
+            position: new google.maps.LatLng( 41.713140, -93.616910 ),
+            type: "residenceinn",
+            address: "1515 SW Main St, Ankeny, IA 50023",
         },
         {
-        position: new google.maps.LatLng( 41.705090, -93.582180 ),
-        type: "caseys",
-        address: "1102 E 1st St, Ankeny, IA 50021",
+            position: new google.maps.LatLng( 41.705090, -93.582180 ),
+            type: "caseys",
+            address: "1010 SE National Dr, Ankeny, IA 50021",
         },
         {
-        position: new google.maps.LatLng( 41.729340, -93.600960 ),
-        type: "caseys",
-        address: "2402 W 1st St, Ankeny, IA 50023",
+            position: new google.maps.LatLng( 41.729340, -93.600960 ),
+            type: "caseys",
+            address: "302 S Ankeny Blvd, Ankeny, IA 50023",
         },
         {
-        position: new google.maps.LatLng( 41.703750, -93.571120 ),
-        type: "caseys",
-        address: "2402 SE Delaware Ave, Ankeny, IA 50021",
+            position: new google.maps.LatLng( 41.703750, -93.571120 ),
+            type: "caseys",
+            address: "2601 SE Creekview Dr, Ankeny, IA 50021",
         },
         {
-        position: new google.maps.LatLng( 41.709380, -93.578550 ),
-        type: "target",
-        address: "2135 SE Delaware Ave, Ankeny, IA 50021",
+            position: new google.maps.LatLng( 41.709380, -93.578550 ),
+            type: "target",
+            address: "2135 SE Delaware Ave, Ankeny, IA 50021",
+        },
+        {
+            position: new google.maps.LatLng( 41.702050, -93.626920 ),
+            type: "kumgo",
+            address: "1910 SW White Birch Cir, Ankeny, IA 50023",
+        },
+        {
+            position: new google.maps.LatLng( 41.716940, -93.601900 ),
+            type: "kumgo",
+            address: "1415 SW School St, Ankeny, IA 50023",
         },
     ];
 
@@ -201,7 +211,7 @@ function initMap() {
     }        
     
     document.getElementById("reset-button").addEventListener("click", () => {
-        map.setZoom(14.4);
+        map.setZoom(14);
         map.setCenter(center);
         infowindow.close();
     });
