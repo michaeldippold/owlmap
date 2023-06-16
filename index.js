@@ -215,6 +215,14 @@ function initMap() {
         map.setCenter(center);
         infowindow.close();
     });
+
+    document.getElementById("legend-toggle").addEventListener("click", (e) => {  
+        if (legend.style.right == "5vw") {
+            legend.style.right = "-100vw";
+        } else {
+            legend.style.right = "5vw";
+        }
+    });
 }
 
 window.initMap = initMap;

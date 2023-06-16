@@ -8,6 +8,10 @@ html {
     position: relative;
 }
 
+body {
+    overflow: hidden !important;
+}
+
 #map {
     height: 100vh;
     width: 100vw;
@@ -27,6 +31,27 @@ html {
     flex-direction: column;
     gap: .8rem;
     border: 4px solid #006450;
+}
+
+@media (max-width: 1000px) {
+    #legend {
+        top: unset;
+        bottom: 5vh;
+        width: calc(100vw - 10vw);
+        transition: all .3s ease-in-out;
+    }
+
+    #legend.opened {
+        right: 5vw;
+    }
+
+    #legend.closed {
+        right: -100vw;
+    }
+
+    #legend-toggle {
+        display: block !important;
+    }
 }
 
 #legend h3 {
@@ -66,9 +91,36 @@ html {
     top: 5vh;
     left: 3vw;
     cursor: pointer;
+    width: 135px;
 }
 
 #reset-button:hover {
+    background-color: #006450;
+    border: 1px solid #006450;
+}
+
+#legend-toggle {
+    color: #FFFFFF;
+    font-family: "Encode Sans Condensed", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1;
+    background-color: #00A887;
+    border: 1px solid #00A887;
+    display: block;
+    margin: 0 0 1rem;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    transition: all .15s ease-in-out;
+    position: absolute;
+    top: 10vh;
+    left: 3vw;
+    cursor: pointer;
+    width: 135px;
+    display: none;
+}
+
+#legend-toggle:hover {
     background-color: #006450;
     border: 1px solid #006450;
 }
